@@ -15,7 +15,7 @@ app.engine('handlebars', handlebars.engine())
 app.set('views', __dirname + '/views')
 app.set('view engine', 'handlebars')
 
-app.use('/', viewsRouter)
+app.use('/views', viewsRouter)
 
 const httpServer = app.listen(PORT, () => {
     console.log(`Server on port: ${PORT}`);
